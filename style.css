@@ -79,7 +79,7 @@ footer{
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
-    border: dashed var(--color) 2px;
+    border: solid var(--color) 2px;
     text-align: center;
     text-decoration: none;  
     color: var(--color);  
@@ -88,7 +88,6 @@ footer{
 }
 
 @media (prefers-color-scheme: dark) {
-
     :root {        
         --background: #202124;
         --color: white;
