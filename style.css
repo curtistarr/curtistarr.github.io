@@ -6,7 +6,7 @@
     --color: #232333;
 }
 
-body{
+body {
     background-color: var(--background);
     color: var(--color);
     font-family: var(--font);
@@ -29,7 +29,7 @@ body{
     text-align: center;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     flex: 1 auto;
@@ -38,14 +38,14 @@ body{
     margin: 0;
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 0.75rem;
     font-weight: 400;
     padding-bottom: 20px;
 }
 
-#userPhoto{
+#userPhoto {
     width: 96px;
     height: 96px;
     display: block;
@@ -54,7 +54,7 @@ footer{
     border: solid var(--color) 2px;
 }
 
-#userName{
+#userName {
     width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
@@ -65,26 +65,39 @@ footer{
     color: var(--color);
 }
 
-#links{
+#links {
     max-width: 90%;
     width: auto;
     display: block;
     margin: 27px auto;
 }
 
-.link{
-    display: block;
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
     padding: 17px;
-    font-size: 1rem;
-    font-weight: 500;
     border-radius: 5px;
     border: solid var(--color) 2px;
-    text-align: center;
     text-decoration: none;  
+}
+
+.link img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.link span {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--color);  
     word-wrap: break-word;
-
 }
 
 @media (prefers-color-scheme: dark) {
