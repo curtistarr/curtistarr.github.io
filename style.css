@@ -80,7 +80,12 @@ footer {
     padding: 17px;
     border-radius: 5px;
     border: solid var(--color) 2px;
-    text-decoration: none;  
+    text-decoration: none;
+    transition: transform 250ms;
+}
+
+.link:hover {
+    transform: translateY(-5px);
 }
 
 .link img {
