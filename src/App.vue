@@ -3,9 +3,8 @@
   <UsernameHeader/>
 
   <div id="links">
-    <LinkButton website-link="https://twitter.com/" image-file="twitter.svg" text="Twitter"/>
-    <LinkButton website-link="https://www.linkedin.com/in/" image-file="linkedin-icon.svg" text="LinkedIn"/>
     <LinkButton website-link="https://github.com/" image-file="github-icon.svg" text="GitHub"/>
+    <LinkButton website-link="https://www.linkedin.com/in/" image-file="linkedin-icon.svg" text="LinkedIn"/>
     <LinkButton website-link="https://hub.docker.com/u/" image-file="docker-icon.svg" text="Docker"/>
     <LinkButton website-link="https://medium.com/@" image-file="medium-icon.svg" text="Medium"/>
   </div>
