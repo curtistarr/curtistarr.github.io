@@ -19,8 +19,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Builds and Deploys current version to gh-pages branch 
-```
-yarn deploy
-```
