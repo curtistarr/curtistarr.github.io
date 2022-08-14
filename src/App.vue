@@ -49,14 +49,10 @@ body {
   padding: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  display: flex;
-  min-height: 100vh;
-  min-width: 100vw;
-  flex-direction: column;
-  flex: 1 auto;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #links {

@@ -48,7 +48,7 @@ export default {
 .link span {
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--color);
   word-wrap: break-word;

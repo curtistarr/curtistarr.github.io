@@ -11,7 +11,7 @@ export default {
 <style scoped>
 footer {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 400;
   padding-bottom: 20px;
 }

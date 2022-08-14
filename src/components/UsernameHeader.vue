@@ -11,7 +11,7 @@ export default {
 <style scoped>
 #user-name {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
