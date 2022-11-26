@@ -31,6 +31,7 @@ export default {
   border: solid var(--color) 2px;
   text-decoration: none;
   transition: transform 250ms;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .link:hover {
