@@ -44,9 +44,7 @@ export default {
 }
 
 body {
-  background: linear-gradient(45deg, #0B2559, #183B59, #2A5159, #327355);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background: #B6864A6B
 }
 
 #content {
@@ -64,17 +62,5 @@ body {
   width: auto;
   display: block;
   margin: 27px auto;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
 }
 </style>
