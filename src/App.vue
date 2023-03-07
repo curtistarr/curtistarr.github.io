@@ -45,7 +45,7 @@ export default {
 }
 
 body {
-  background: #B6864A6B
+  background: #34495e
 }
 
 #content {
