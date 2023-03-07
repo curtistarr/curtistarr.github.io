@@ -1,5 +1,5 @@
 <template>
-  <footer>@tarrcurtis</footer>
+  <footer>@CurtisTarr</footer>
 </template>
 
 <script>

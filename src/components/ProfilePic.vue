@@ -1,5 +1,5 @@
 <template>
-  <img id="profile-pic" src="https://github.com/tarrcurtis.png" alt="">
+  <img id="profile-pic" src="https://github.com/CurtisTarr.png" alt="">
 </template>
 
 <script>

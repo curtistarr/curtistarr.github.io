@@ -11,7 +11,7 @@ export default {
   props: ["websiteLink", "imageFile", "text"],
   methods: {
     getLink() {
-      return this.websiteLink + "tarrcurtis";
+      return this.websiteLink + "CurtisTarr";
     },
     getImage() {
       return "https://raw.githubusercontent.com/gilbarbara/logos/master/logos/" + this.imageFile;
