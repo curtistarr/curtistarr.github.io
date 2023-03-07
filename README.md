@@ -1,4 +1,4 @@
-# tarrcurtis.github.io
+# CurtisTarr.github.io
 
 ## Project setup
 ```
