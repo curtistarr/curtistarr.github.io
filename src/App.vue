@@ -8,6 +8,7 @@
       <LinkButton website-link="https://www.linkedin.com/in/" image-file="linkedin-icon.svg" text="LinkedIn"/>
       <LinkButton website-link="https://hub.docker.com/u/" image-file="docker-icon.svg" text="Docker"/>
       <LinkButton website-link="https://medium.com/@" image-file="medium-icon.svg" text="Medium"/>
+      <LinkButton website-link="https://stackoverflow.com/users/" user-name="6703937/curtis-tarr" full-image-path="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" text="Stack Overflow"/>
     </div>
 
     <UsernameFooter/>

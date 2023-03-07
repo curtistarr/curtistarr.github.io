@@ -1,6 +1,6 @@
 <template>
-  <a class="link" :href="getLink()" rel="noopener">
-    <img :src="getImage()" alt="">
+  <a class="link" :href="link" rel="noopener">
+    <img :src="image" alt="">
     <span>{{ text }}</span>
   </a>
 </template>
@@ -8,13 +8,22 @@
 <script>
 export default {
   name: "LinkButton",
-  props: ["websiteLink", "imageFile", "text"],
-  methods: {
-    getLink() {
-      return this.websiteLink + "curtistarr";
+  props: {
+    websiteLink: String,
+    userName: String,
+    imageFile: String,
+    fullImagePath: String,
+    text: String
+
+  },
+  computed: {
+    link() {
+      return this.websiteLink + (this.userName ? this.userName : "curtistarr");
     },
-    getImage() {
-      return "https://raw.githubusercontent.com/gilbarbara/logos/master/logos/" + this.imageFile;
+    image() {
+      return this.fullImagePath
+          ? this.fullImagePath
+          : "https://raw.githubusercontent.com/gilbarbara/logos/master/logos/" + this.imageFile;
     }
   }
 }
