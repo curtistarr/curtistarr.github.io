@@ -62,5 +62,6 @@ export default {
   font-weight: 500;
   color: var(--color);
   word-wrap: break-word;
+  white-space: nowrap;
 }
 </style>
