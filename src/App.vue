@@ -8,8 +8,9 @@
       <LinkButton website-link="https://www.linkedin.com/in/" image-file="linkedin-icon.svg" text="LinkedIn"/>
       <LinkButton website-link="https://hub.docker.com/u/" image-file="docker-icon.svg" text="Docker"/>
       <LinkButton website-link="https://medium.com/@" image-file="medium-icon.svg" text="Medium"/>
-      <LinkButton website-link="https://www.postman.com/" full-image-path="https://voyager.postman.com/logo/postman-logo-icon-orange.svg" text="Postman"/>
-      <LinkButton website-link="https://stackoverflow.com/users/" user-name="6703937/curtis-tarr" full-image-path="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" text="Stack Overflow"/>
+      <LinkButton website-link="https://twitter.com/" image-file="twitter.svg" text="Twitter"/>
+      <LinkButton website-link="https://www.postman.com/" image-file="postman-icon.svg" text="Postman"/>
+      <LinkButton website-link="https://stackoverflow.com/users/" user-name="6703937/curtis-tarr" image-file="stackoverflow-icon.svg" text="Stack Overflow"/>
     </div>
 
     <UsernameFooter/>
