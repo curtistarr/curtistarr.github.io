@@ -1,15 +1,20 @@
 <template>
-  <h1 id="user-name">Curtis Tarr</h1>
+  <h1 id="username-header">{{ username }}</h1>
 </template>
 
 <script>
 export default {
-  name: "UsernameHeader"
+  props: {
+    username: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
 <style scoped>
-#user-name {
+#username-header {
   width: 100%;
   font-size: 1.75rem;
   font-weight: 400;

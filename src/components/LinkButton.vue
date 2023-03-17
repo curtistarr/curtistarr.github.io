@@ -9,21 +9,30 @@
 export default {
   name: "LinkButton",
   props: {
-    websiteLink: String,
-    imageFile: String,
-    text: String,
-    userName: {
-      default: 'curtistarr',
-      type: String
+    websiteLink: {
+      type: String,
+      required: true
+    },
+    imageFile: {
+      type: String,
+      required: true
+    },
+    text: {
+      type: String,
+      required: true
+    },
+    username: {
+      type: String,
+      required: false,
+      default: 'curtistarr'
     }
-
   },
   computed: {
     link() {
-      return this.websiteLink + this.userName;
+      return this.websiteLink + this.username;
     },
     image() {
-      return "https://raw.githubusercontent.com/gilbarbara/logos/master/logos/" + this.imageFile;
+      return "/assets/img/logos/" + this.imageFile;
     }
   }
 }

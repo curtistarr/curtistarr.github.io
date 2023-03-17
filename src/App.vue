@@ -1,35 +1,61 @@
 <template>
   <div id="content">
-    <ProfilePic/>
-    <UsernameHeader/>
+    <img id="profile-pic" src="/assets/img/profile-pic.jpg" alt="">
+    <username-header :username="headerUsername" />
 
     <div id="links">
-      <LinkButton website-link="https://github.com/" image-file="github-icon.svg" text="GitHub"/>
-      <LinkButton website-link="https://www.linkedin.com/in/" image-file="linkedin-icon.svg" text="LinkedIn"/>
-      <LinkButton website-link="https://hub.docker.com/u/" image-file="docker-icon.svg" text="Docker"/>
-      <LinkButton website-link="https://medium.com/@" image-file="medium-icon.svg" text="Medium"/>
-      <LinkButton website-link="https://twitter.com/" image-file="twitter.svg" text="Twitter"/>
-      <LinkButton website-link="https://www.postman.com/" image-file="postman-icon.svg" text="Postman"/>
-      <LinkButton website-link="https://stackoverflow.com/users/" user-name="6703937/curtis-tarr" image-file="stackoverflow-icon.svg" text="Stack Overflow"/>
+      <link-button v-for="link in links" :key="link.text" v-bind="link" />
     </div>
 
-    <UsernameFooter/>
+    <username-footer :username="footerUsername" />
   </div>
 </template>
 
 <script>
-import ProfilePic from "@/components/ProfilePic";
-import UsernameHeader from "@/components/UsernameHeader";
-import LinkButton from '@/components/LinkButton.vue';
-import UsernameFooter from "@/components/UsernameFooter";
-
 export default {
-  name: 'App',
-  components: {
-    ProfilePic,
-    UsernameHeader,
-    LinkButton,
-    UsernameFooter
+  data() {
+    return {
+      headerUsername: "Curtis Tarr",
+      footerUsername: "@CurtisTarr",
+      links: [
+        {
+          text: "GitHub",
+          websiteLink: "https://github.com/",
+          imageFile: "github-icon.svg"
+        },
+        {
+          text: "LinkedIn",
+          websiteLink: "https://www.linkedin.com/in/",
+          imageFile: "linkedin-icon.svg"
+        },
+        {
+          text: "Docker",
+          websiteLink: "https://hub.docker.com/u/",
+          imageFile: "docker-icon.svg"
+        },
+        {
+          text: "Medium",
+          websiteLink: "https://medium.com/@",
+          imageFile: "medium-icon.svg"
+        },
+        {
+          text: "Twitter",
+          websiteLink: "https://twitter.com/",
+          imageFile: "twitter.svg"
+        },
+        {
+          text: "Postman",
+          websiteLink: "https://www.postman.com/",
+          imageFile: "postman-icon.svg"
+        },
+        {
+          text: "Stack Overflow",
+          websiteLink: "https://stackoverflow.com/users/",
+          imageFile: "stackoverflow-icon.svg",
+          username: "6703937/curtis-tarr"
+        }
+      ]
+    }
   }
 }
 </script>
@@ -55,6 +81,15 @@ body {
   margin: 0;
   padding: 0;
   position: center;
+}
+
+#profile-pic {
+  width: 96px;
+  height: 96px;
+  display: block;
+  margin: 35px auto 20px;
+  border-radius: 50%;
+  border: solid var(--color) 2px;
 }
 
 #links {

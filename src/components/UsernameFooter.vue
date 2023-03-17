@@ -1,10 +1,15 @@
 <template>
-  <footer>@CurtisTarr</footer>
+  <footer>{{ username }}</footer>
 </template>
 
 <script>
 export default {
-  name: "UsernameFooter"
+  props: {
+    username: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
