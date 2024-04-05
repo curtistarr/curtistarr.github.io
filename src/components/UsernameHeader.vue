@@ -2,15 +2,17 @@
   <h1 id="username-header">{{ username }}</h1>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   props: {
     username: {
       type: String,
       required: true
     }
   }
-}
+});
 </script>
 
 <style scoped>
