@@ -5,8 +5,10 @@
   </a>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: "LinkButton",
   props: {
     websiteLink: {
@@ -32,10 +34,10 @@ export default {
       return this.websiteLink + this.username;
     },
     image() {
-      return "/assets/img/logos/" + this.imageFile;
+      return "src/assets/img/logos/" + this.imageFile;
     }
   }
-}
+});
 </script>
 
 <style scoped>
