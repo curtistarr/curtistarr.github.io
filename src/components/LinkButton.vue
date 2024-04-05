@@ -34,7 +34,7 @@ export default defineComponent({
       return this.websiteLink + this.username;
     },
     image() {
-      return "src/assets/img/logos/" + this.imageFile;
+      return new URL(`../assets/img/logos/${this.imageFile}`, import.meta.url).href;
     }
   }
 });
