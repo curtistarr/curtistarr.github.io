@@ -16,6 +16,7 @@ import { defineComponent } from 'vue';
 import UsernameHeader from '../components/UsernameHeader.vue';
 import LinkButton from '../components/LinkButton.vue';
 import UsernameFooter from '../components/UsernameFooter.vue';
+import links from '../assets/links.json';
 
 export default defineComponent({
   components: {UsernameFooter, LinkButton, UsernameHeader},
@@ -23,44 +24,7 @@ export default defineComponent({
     return {
       headerUsername: "Curtis Tarr",
       footerUsername: "@CurtisTarr",
-      links: [
-        {
-          text: "GitHub",
-          websiteLink: "https://github.com/",
-          imageFile: "github-icon.svg"
-        },
-        {
-          text: "LinkedIn",
-          websiteLink: "https://www.linkedin.com/in/",
-          imageFile: "linkedin-icon.svg"
-        },
-        {
-          text: "Docker",
-          websiteLink: "https://hub.docker.com/u/",
-          imageFile: "docker-icon.svg"
-        },
-        {
-          text: "Medium",
-          websiteLink: "https://medium.com/@",
-          imageFile: "medium-icon.svg"
-        },
-        {
-          text: "Twitter",
-          websiteLink: "https://twitter.com/",
-          imageFile: "twitter.svg"
-        },
-        {
-          text: "Postman",
-          websiteLink: "https://www.postman.com/",
-          imageFile: "postman-icon.svg"
-        },
-        {
-          text: "Stack Overflow",
-          websiteLink: "https://stackoverflow.com/users/",
-          imageFile: "stackoverflow-icon.svg",
-          username: "6703937/curtis-tarr"
-        }
-      ]
+      links: links
     }
   }
 });
