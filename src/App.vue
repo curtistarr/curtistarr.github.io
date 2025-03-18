@@ -19,6 +19,6 @@ import LinkPage from "./pages/LinkPage.vue";
 }
 
 body {
-  background: #34495e
+  background-color: #f6f8fa;
 }
 </style>

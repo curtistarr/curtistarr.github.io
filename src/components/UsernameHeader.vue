@@ -1,5 +1,8 @@
 <template>
-  <h1 id="username-header">{{ username }}</h1>
+  <div class="header">
+    <h1 class="username">{{ username }}</h1>
+    <div class="subtitle">Software Engineer</div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -16,14 +19,22 @@ export default defineComponent({
 </script>
 
 <style scoped>
-#username-header {
-  width: 100%;
-  font-size: 1.75rem;
-  font-weight: 400;
+.header {
   text-align: center;
-  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.username {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #24292e;
+  margin: 0;
   line-height: 1.25;
-  display: block;
-  color: var(--color);
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #6a737d;
+  margin-top: 4px;
 }
 </style>

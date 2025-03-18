@@ -4,7 +4,7 @@
     <username-header :username="headerUsername" />
 
     <div id="links">
-      <link-button v-for="link in links" :key="link.text" v-bind="link" />
+      <link-card v-for="link in links" :key="link.text" v-bind="link" />
     </div>
 
     <username-footer :username="footerUsername" />
@@ -14,12 +14,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import UsernameHeader from '../components/UsernameHeader.vue';
-import LinkButton from '../components/LinkButton.vue';
+import LinkCard from '../components/LinkCard.vue';
 import UsernameFooter from '../components/UsernameFooter.vue';
 import links from '../assets/links.json';
 
 export default defineComponent({
-  components: {UsernameFooter, LinkButton, UsernameHeader},
+  components: {UsernameFooter, LinkCard, UsernameHeader},
   data() {
     return {
       headerUsername: "Curtis Tarr",
@@ -44,13 +44,23 @@ export default defineComponent({
   display: block;
   margin: 35px auto 20px;
   border-radius: 50%;
-  border: solid var(--color) 2px;
+  border: 2px solid #e1e4e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  object-fit: cover;
+}
+
+#profile-pic:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border-color: #d1d5da;
 }
 
 #links {
   max-width: 90%;
-  width: 250px;
+  width: 400px;
   display: block;
   margin: 27px auto;
+  padding: 0 20px;
 }
 </style>

@@ -1,5 +1,9 @@
 <template>
-  <footer>{{ username }}</footer>
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-username">{{ username }}</span>
+    </div>
+  </footer>
 </template>
 
 <script lang="ts">
@@ -16,10 +20,21 @@ export default defineComponent({
 </script>
 
 <style scoped>
-footer {
+.footer {
   text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  padding-bottom: 20px;
+  padding: 24px 0;
+  margin-top: 8px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-username {
+  font-size: 0.85rem;
+  color: #24292e;
+  font-weight: 500;
 }
 </style>
