@@ -1,4 +1,4 @@
-# CurtisTarr.github.io
+# curtistarr.github.io
 
 ## Running
 
