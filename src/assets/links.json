@@ -10,11 +10,6 @@
     "imageFile": "linkedin-icon.svg"
   },
   {
-    "text": "Docker",
-    "websiteLink": "https://hub.docker.com/u/",
-    "imageFile": "docker-icon.svg"
-  },
-  {
     "text": "Medium",
     "websiteLink": "https://medium.com/@",
     "imageFile": "medium-icon.svg"
@@ -25,15 +20,9 @@
     "imageFile": "x.svg"
   },
   {
-    "text": "Postman",
-    "websiteLink": "https://www.postman.com/",
-    "imageFile": "postman-icon.svg"
-  },
-  {
-    "text": "Stack Overflow",
-    "websiteLink": "https://stackoverflow.com/users/",
-    "imageFile": "stackoverflow-icon.svg",
-    "username": "6703937/curtis-tarr"
+    "text": "Docker",
+    "websiteLink": "https://hub.docker.com/u/",
+    "imageFile": "docker-icon.svg"
   },
   {
     "text": "itch.io",
