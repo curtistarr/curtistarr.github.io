@@ -23,7 +23,7 @@ export default defineComponent({
   data() {
     return {
       headerUsername: "Curtis Tarr",
-      footerUsername: "@CurtisTarr",
+      footerUsername: "@curtistarr",
       links: links
     }
   }
