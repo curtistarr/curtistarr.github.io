@@ -7,9 +7,29 @@
 - `npm run build` - Build and output to `./dist`
 - `npm run preview` - Starts a local web server that serves the built solution from `./dist`
 
-## Adding New Links
+## Adding New Blog Posts
 
-To add new links to the application, update the `src/assets/links.json` file. Each link object should contain the following properties: `text`, `websiteLink`, `imageFile`, and optionally `username`. Here's an example of a link object:
+Posts are markdown files in `src/posts/`. The file name (minus `.md`) becomes the URL slug, e.g. `src/posts/hello-world.md` is served at `/#/posts/hello-world`. Posts are loaded at build time via `import.meta.glob`, so adding a file is enough — no index to update.
+
+Each post starts with a YAML-style frontmatter block:
+
+```markdown
+---
+title: My new post
+date: 2026-04-28
+summary: A one-line summary shown on the home feed.
+---
+
+# Body starts here
+
+Write the post in standard markdown.
+```
+
+The home feed sorts posts by `date` (newest first).
+
+## Adding New Social Links
+
+Sidebar social links live in `src/assets/links.json`. Each entry has `text`, `websiteLink`, `imageFile`, and optionally `username`:
 
 ```json
 {
