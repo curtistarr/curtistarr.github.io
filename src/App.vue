@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import LinkPage from "./pages/LinkPage.vue";
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <link-page />
+  <router-view />
 </template>
 
 <style>
@@ -13,12 +13,12 @@ import LinkPage from "./pages/LinkPage.vue";
   font-family: 'Fira Code', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   text-rendering: optimizeLegibility;
   --color: white;
 }
 
 body {
   background-color: #f6f8fa;
+  margin: 0;
 }
 </style>
