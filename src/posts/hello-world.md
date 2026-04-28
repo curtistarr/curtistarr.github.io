@@ -4,8 +4,6 @@ date: 2026-04-27
 summary: A quick intro to this little corner of the internet, and what I plan to write about here.
 ---
 
-# Hello, world
-
 Welcome to my new blog. I've spent the last while collecting thoughts in scratch
 files and never quite shipping them, so I'm giving them a permanent home here.
 
