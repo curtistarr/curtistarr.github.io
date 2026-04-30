@@ -22,7 +22,7 @@ The answer isn’t “rewrite it” - that instinct has killed more projects tha
 
 **Name it honestly.** If a module is load-bearing, the people who come after you deserve to know that before they start confidently refactoring it at 4pm on a Friday. A comment at the top of the file costs nothing. *“This service handles X and Y. It has implicit dependencies on call order - see below.”* That’s not an admission of failure, it’s an act of respect for future teammates.
 
-**Write characterisation tests.** Not tests that describe what the code *should* do - tests that describe what it *actually does*, right now. The goal isn’t coverage metrics, it’s a safety net. If you change something and three characterisation tests break, you know you’ve moved something structural. Michael Feathers called this approach working with legacy code rather than against it, and it holds up.
+**Write characterisation tests.** Not tests that describe what the code *should* do - tests that describe what it *actually does*, right now. The goal isn’t coverage metrics, it’s a safety net. If you change something and three characterisation tests break, you know you’ve moved something structural. [Michael Feathers](https://michaelfeathers.silvrback.com/characterization-testing) called this approach working with legacy code rather than against it, and it holds up.
 
 **Map the blast radius.** Before touching anything, understand what depends on it. Trace the callers. Check for any configuration or ordering assumptions buried in the code. You’re not looking to fix anything yet - you’re just drawing a map. The map itself is valuable, even if you never change a line.
 
