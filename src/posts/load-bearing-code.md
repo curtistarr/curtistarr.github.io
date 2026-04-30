@@ -1,4 +1,8 @@
-# Load-Bearing Code
+---
+title: Load-Bearing Code
+date: 2026-04-30
+summary: How to refactor without collapsing the building.
+---
 
 ## How to Refactor Without Collapsing the Building
 
