@@ -6,9 +6,9 @@ summary: How a simple boolean condition can save you hours of compute.
 
 ## How a simple boolean condition can save you hours of compute
 
-![](https://cdn-images-1.medium.com/max/1600/0*UN3XmX42btAw2rje)
+![](https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
-Photo by [Emile Perron](https://unsplash.com/@emilep?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [Emile Perron](https://unsplash.com/@emilep) on [Unsplash](https://unsplash.com/)
 
 When I first started as a developer, I was working on a large SAAS application. One day, a technical architect (TA) with an eye for detail left a comment on one of my PRs. It pointed out an issue in a straightforward `if` condition, similar to this:
 
