@@ -34,6 +34,6 @@ Load-bearing code doesn’t have to stay scary. It just needs to be treated with
 
 ---
 
-I’ve faced code like this a few times in my career, and the approaches above helped me and my teams feel confident working with it. 
+I’ve faced code like this a few times in my career, and the approaches above helped me and my teams feel confident working with it.
 
 Fittingly, the idea for this article is itself a bit load-bearing - it’s been sitting untouched in my notes since [WWDC 2023](https://x.com/curtistarr/status/1665778153610944516), working fine, waiting for someone to finally do something with it.
