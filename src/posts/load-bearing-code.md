@@ -1,6 +1,6 @@
 ---
 title: Load-Bearing Code
-date: 2026-04-30
+date: 2026-05-02
 summary: How to refactor without collapsing the building.
 ---
 
